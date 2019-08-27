@@ -1,0 +1,214 @@
+-what is nodejs?
+ NOde.js is a web applicaiton framework built on chrome javascript Engine v8 engine.
+ Node.js = Runtime Environment + JavaScript Library.
+-what do you mean by Asynchronous Api?
+ All APIs of Nodejs library are asynhronous that is non-blocking.It essentially means a Node.js based server
+ never waits for a ApI to return data. Server moves to next Api after calling it and a notification mechanism 
+ of events of Node.js helps server to get response from the previous api calls.
+ Nodejs is open source and it is released under MIT license.
+-Is NOde a single threaded application?
+ Yes Node is a single threaded model with event looping.
+-what is REPL in context of Node?
+ REPL stands for Read Eval Print Loop and it represents a computer environment like a window console or unix/
+ linux shell wher a command is entered and system responds with an outpu. NODE.js or node comes bundled with a
+ REPL environment. It performs the following desired tasks.
+ Read - Reads users's input, parse the input into javascript dta-strucure and stores in memory.
+ Eval -Takes and evaluates the data structure.
+ Print -  Prints the result
+ Loop - Loops the above command until user press ctrl-c twice.
+-what isthe difference of using var and not using var in REPL while dealing with variables?
+ Use variables to store values and print later. if var keyword is not used then value is stored in the variable
+ and printed. whereas if var keyword is used then value is tored but not printed. you can use both variables 
+ later.
+-what is the use of underscore variable in REPL?
+ Use _to get the last result.
+-what is global installation of dependencies?
+ Globally installed packages are stored in <user-directory>/npm directory. such dependencies can be used in cli
+ funciton of any node.js but can not be imported using require() in Node application directly.To install a Node
+ project globally use -g flag.
+-what is local installation of dependencies?
+ By default, npm installs nay dependency in the local mode. Here local mode refers to package installation in
+ node_modules directory lying in the folder where Node applicaiton is present.Locally deployed packages are
+ accessible via require().
+-what is the command to check the installed dependencies
+ npm Is -g
+
+-> nodejs is the largest eocsystem of open source libraries in the world.
+-> nodejs eliminates the waiting, and simply continues with the next request.
+->nodejs is memory efficient.
+
+->Tooling:It keeeps packages alone from ohter projects, avoiding the version strife
+->Streaming Data: It gets high range of data without any discrepancies.
+->Highly Scalable: Because it uses event mechanism helps the server to respond in a non-blocking
+  these application simply output the data in chunks.
+
+-what is NPM in Node.js?
+ NPM(node package manager) provides following two main funciton.
+ NPM works as an onlin repository for node.js package/modules which are present at <nodejs.org>.
+ NPM works as command line utility to install packages, do version management and dependency management of
+ Node.js packages.
+ 
+-what are the two types fo API funcitons in Node.js
+ blocking and non-blocking
+ 
+-How to scale Node application?
+ cloning using cluster module.
+ Decomposing the application into smaller services. ie micro services.
+
+-what is streams and types of streams?
+ streams are a collection of stat that might not be available all at once and dont have to fit in memory.
+ Streams provide chunks of data in a continous manner. It is useful to read a large set of data and process it.
+ Readable-read large chunk of data, 
+ writeable-write streams are used in writing a large chunk of data to the destination,
+ transform-transform stream is the duplex stream which is used in modifying the data(ex-zip creation),
+ duplex- duplex streams are both readable and writeable.
+ 
+-what is event loop
+ Node.js is single thread but it supports concurrency using events and callbacks. The event loop is a component
+ which checks event queue on a periodic basis and pushes the result in execution stack if the stack is empty.
+
+-what is callbakc hell?
+ the asynchronous function requires callbacks as a return parameter. When multiple asychronous function are
+ chained together then callback hell situation comes up.
+
+-what are error First callbacks in Node.js?
+ The error-first callback is a standard protocal for node.js callbacks which has a simple rule that the first
+ argument for the callback function shoud be an error object.If the error argument is not null, then the 
+ operations was not successful, error has occurred and if teh error argument is null then operation is 
+ successful.
+ 
+-what is libuv?
+ It is a multiplatform support library wiht a focus on asynchronous i/o .
+
+-what is chainginprocess in node.js
+ Its an approach to connect the output of one stream to the input of another stream, thus creating a chain
+ of multiple stream operations.
+
+-what are the two arguments that async.queue takes?
+ The two arguments that async.queue takes are  1.Task function 2. concurrency value
+
+-what is package.json?
+ It is a plain json(javascript object Notaiton) text file which contains all metadata information about Node.js
+ Project or applicaiton. This file should be present in the root directory of every Node.js package.Every 
+ feature as a separate component.
+
+-what is event-driven programming?
+ Event driven progarmming is a prograrmmin paradigm in which the flow of the program is determined by events 
+ like messages from other programs or threads.
+
+-Explain the role of REPL in Node.js?
+ REPL(read evaluate print loop) performs the taks of - read, evaluate, print and loop. The REPL in Node.js
+ used to execute ad-hoc javascript statements. The REPL shell allows entry to javascript directly into a 
+ shell prompt and evaluates teh results. For the purpose of testing,debugging, or experimenting.REPL is very
+ critical.
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
